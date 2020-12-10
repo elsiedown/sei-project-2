@@ -27,12 +27,6 @@ function MealShow() {
   }, [id])
   
 
- 
-
-
-
-
-
   return (
     <section className="section">
       <div className="container">
