@@ -1,5 +1,7 @@
 import React from 'react'
+import image from '../../styles/images/image-logo.png'
 import { Link } from 'react-router-dom'
+
 
 function Nav() {
   return (
@@ -7,7 +9,7 @@ function Nav() {
       <nav className="navbar is-dark">
         <div className="container">
           <div className="navbar-brand">
-            <Link to="/" className="navbar-item"><img src="./src/styles/images/image-logo.png'"></img></Link>
+            <Link to="/" className="navbar-item"><img src={image} alt="website-logo"/></Link>
             <Link to="/ingredients" className="navbar-item">Ingredients</Link>
           </div>
         </div>

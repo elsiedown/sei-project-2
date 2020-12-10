@@ -5,19 +5,23 @@ import axios from 'axios'
 
 
 function MealShow() {
-
-
-  const [data, setData] = React.useState('')
-  const meals = data.meals
-  console.log(meals)
+  const [meals, setMeals] = React.useState('')
+  const [categories, setCategories] = React.useState('')
   const { id } = useParams()
+
+ 
+
 
 
   React.useEffect(() => {
     const getData = async () => {
       try {
         const { data } = await axios.get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
-        setData(data)
+
+        const { data: similarCategories } = await axios.get(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${data.meals[0].strCategory}`)
+
+        setMeals(data)
+        setCategories(similarCategories)
       } catch (err) {
         console.log(err)
       }
@@ -25,23 +29,27 @@ function MealShow() {
     getData()
   }, [id])
 
+
+
+
   
+  console.log(categories)
   return (
     <section className="section">
       <div className="container">
-        {data ?
+        {meals ?
           <div>
-            <h2 className="title has-text-centered">{data.meals[0].strMeal}</h2>
+            <h2 className="title has-text-centered">{meals.meals[0].strMeal}</h2>
             <hr />
             <div className="columns showPage">
               <div className="column is-half">
                 <figure className="image">
-                  <img src={data.meals[0].strMealThumb} alt={data.meals[0].strMeal} />
+                  <img src={meals.meals[0].strMealThumb} alt={meals.meals[0].strMeal} />
                 </figure>
               </div>
-              <div className="column is-half showPage">
+              <div className="column showPage is-half">
                 <h4 className="title is-4"><span role="img" aria-label="plate">🍽</span> Instructions</h4>
-                <p>{data.meals[0].strInstructions}</p>
+                <p>{meals.meals[0].strInstructions}</p>
                 <hr />
               </div>
             </div>

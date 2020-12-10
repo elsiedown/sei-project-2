@@ -1,5 +1,4 @@
 @import '~bulma/bulma.sass'; 
-
 html, body {
   height: 100%;
 }
@@ -32,11 +31,15 @@ h1 {
   width: 360px;
   height: 408px;
 }
-
-.column:hover {
-cursor: pointer;
-border: 10px solid white;
+.showPage{
+  height: 380px;
+  overflow-y: auto;
 }
+
+// .column:hover {
+// cursor: pointer;
+// border: 10px solid white;
+// }
 
 .navbar.is-dark {
   background-color: black;
