@@ -1,5 +1,9 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
+import image from '../../styles/images/image-logo.png'
+
+
+
 function Home() {
   const [search, setSearch] = React.useState('')
   // let searchvalue = ''
@@ -12,6 +16,11 @@ function Home() {
   const handleFormChange = event => {
     setSearch(event.target.value)
   }
+
+  const handleRandomise = event => {
+    event.preventDefault()
+    history.push('/meals/random')
+  }
   return (
     <>
       <section className="homepage">
@@ -19,11 +28,13 @@ function Home() {
         <form onSubmit={handleFormSubmit}>
           <input autoFocus 
             type="text"
-            placeholder="Search"
+            placeholder="Search Your Ingredient"
             onChange={handleFormChange}
           />
-          <button>Look for Meal</button>
+          <button className="button"
+            value="random">Look for Meal</button>
         </form>
+        <img onClick={handleRandomise} className="button randomise" src={image}></img>
       </section>
     </>
   )

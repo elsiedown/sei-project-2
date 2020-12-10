@@ -1,4 +1,6 @@
-@import '~bulma/bulma.sass'; 
+@import '~bulma/bulma.sass';
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+
 html, body {
   height: 100%;
 }
@@ -6,6 +8,8 @@ body {
   margin: 0;
 }
 .homepage {
+  font-family: 'Ranchers', cursive;
+  color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,6 +20,10 @@ body {
   background-repeat: none;
   background-size: cover;
   margin: 0;
+  .randomise {
+    height: 50px;
+    margin-top: 50px;
+  }
 }
 h1 {
   font-size: 100px;
@@ -36,11 +44,52 @@ h1 {
   overflow-y: auto;
 }
 
-// .column:hover {
-// cursor: pointer;
-// border: 10px solid white;
-// }
+.card-column:hover {
+cursor: pointer;
+border: 10px solid white;
+}
 
+.navbar {
+  font-family: 'Ranchers', cursive;
+  font-size: 24px;
+}
 .navbar.is-dark {
   background-color: black;
 }
+
+.meal-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  form {
+    margin-bottom: 40px;
+    input {
+      margin-right: 5px;
+    }
+  }
+}
+
+input {
+  background-color: transparent;
+  height: 36px;
+  width: 260px;
+  border: 1px grey solid;
+  text-align: center;
+}
+
+button {
+  font-family: 'Ranchers', cursive;
+  padding: 5px;
+}
+
+.heading-meal {
+  font-size: 30px;
+  text-align: center;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+}
+

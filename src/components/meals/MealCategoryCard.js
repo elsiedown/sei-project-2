@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function MealCard({ strMeal, strMealThumb, idMeal }) {
+function MealCategoryCard({ strMeal, strMealThumb, idMeal }) {
 
 
   return (
-    <div className="card-column column is-one-third-desktop is-half-tablet" >
+    <div className="column">
       <Link to={`/meals/${idMeal}`}>
         <div className="card size">
           <div className="card-image">
@@ -22,4 +22,4 @@ function MealCard({ strMeal, strMealThumb, idMeal }) {
    
   )
 }
-export default MealCard
+export default MealCategoryCard

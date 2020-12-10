@@ -9,6 +9,8 @@ import IngredientShow from './components/ingredients/IngredientShow'
 
 import MealIndex from './components/meals/MealIndex'
 import MealShow from './components/meals/MealShow'
+import MealRandomShow from './components/meals/MealRandomShow'
+
 
 
 
@@ -19,6 +21,7 @@ function App() {
       <Nav />
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route path="/meals/random" component={MealRandomShow}/>
         <Route path="/meals/:id" component={MealShow}/>
         <Route path="/meals" component={MealIndex}/>
         <Route path="/ingredients/:id" component={IngredientShow}/>

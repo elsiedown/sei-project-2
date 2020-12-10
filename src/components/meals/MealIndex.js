@@ -1,7 +1,8 @@
 import React from 'react'
 import MealCard from './MealCard'
 import axios from 'axios'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useHistory } from 'react-router-dom'
+
 
 
 function MealIndex( ) {
@@ -12,7 +13,12 @@ function MealIndex( ) {
   const meals = data.meals
   console.log(meals)
 
+  const [search, setSearch] = React.useState('')
+  // let searchvalue = ''
+  const history = useHistory()
 
+
+  
   React.useEffect(() => {
     const getData = async () => {
       try {
@@ -23,13 +29,33 @@ function MealIndex( ) {
       }
     } 
     getData()
-  }, [])
+  }, [searchterm])
+  
+  
+  
+
+  const handleFormSubmit = event => {
+    event.preventDefault()
+    history.push(`/meals?search=${search}`)
+  }
+
+  const handleFormChange = event => {
+    setSearch(event.target.value)
+  }
 
   
   console.log(meals)
   return (
     <section className="section">
-      <div className="container">
+      <div className="container meal-search">
+        <form onSubmit={handleFormSubmit}>
+          <input autoFocus 
+            type="text"
+            placeholder="Search"
+            onChange={handleFormChange}
+          />
+          <button className="button">Look for Meal</button>
+        </form>
         <div className="columns is-multiline">
           {meals ?
             meals.map(meal => (

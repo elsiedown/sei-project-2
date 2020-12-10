@@ -1,21 +1,17 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import MealCategoryCard from './MealCategoryCard'
 
 
-function MealShow() {
+function MealRandomShow() {
   const [meals, setMeals] = React.useState('')
   const [categories, setCategories] = React.useState('')
   const similarMeals = categories.meals
-  console.log(meals)
-  const { id } = useParams()
-
 
   React.useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
+        const { data } = await axios.get('https://www.themealdb.com/api/json/v1/1/random.php')
         const { data: similarCategories } = await axios.get(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${data.meals[0].strCategory}`)
         setMeals(data)
         setCategories(similarCategories)
@@ -24,14 +20,8 @@ function MealShow() {
       }
     }
     getData()
-  }, [id])
+  }, [])
   
-
- 
-
-
-
-
 
   return (
     <section className="section">
@@ -74,4 +64,4 @@ function MealShow() {
   )
 }
 
-export default MealShow
+export default MealRandomShow
