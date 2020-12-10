@@ -11,6 +11,8 @@ function MealIndex( ) {
   const [data, setData] = React.useState('')
   const meals = data.meals
   console.log(meals)
+
+
   React.useEffect(() => {
     const getData = async () => {
       try {
@@ -22,6 +24,8 @@ function MealIndex( ) {
     } 
     getData()
   }, [])
+
+  
   console.log(meals)
   return (
     <section className="section">
