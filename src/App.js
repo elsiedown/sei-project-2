@@ -13,13 +13,13 @@ import MealShow from './components/meals/MealShow'
 
 
 function App() {
-  console.log(process.env.REACT_APP_MY_API_KEY)
+  // console.log(process.env.REACT_APP_MY_API_KEY)
   return (
     <BrowserRouter>
       <Nav />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/meals/:id" component={MealShow}/>
+        <Route path="/meals/id/:id" component={MealShow}/>
         <Route path="/meals" component={MealIndex}/>
         <Route path="/ingredients/:id" component={IngredientShow}/>
         <Route path="/ingredients" component={IngredientIndex}/>

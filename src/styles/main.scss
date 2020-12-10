@@ -16,8 +16,16 @@ html, body {
   background-repeat: none;
   background-size: cover;
   margin: 0;
+  input {
+    background-color: transparent;
+    border: grey 1px solid;
+  }
 }
 
 h1 {
   font-size: 100px;
+}
+
+nav {
+  background-color: black;
 }
