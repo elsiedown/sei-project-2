@@ -22,8 +22,16 @@ body {
   margin: 0;
   .randomise {
     height: 50px;
-    margin-top: 50px;
   }
+}
+
+.feeling-lucky {
+font-size: 28px;
+margin-top: 70px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 h1 {
   font-size: 100px;
@@ -75,11 +83,21 @@ input {
   width: 260px;
   border: 1px grey solid;
   text-align: center;
+  outline: none;
+}
+
+input:focus {
+  outline:none;
 }
 
 button {
   font-family: 'Ranchers', cursive;
   padding: 5px;
+  outline: none;
+}
+
+button:focus {
+  outline: none;
 }
 
 .heading-meal {

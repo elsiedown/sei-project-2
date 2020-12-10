@@ -34,7 +34,10 @@ function Home() {
           <button className="button"
             value="random">Look for Meal</button>
         </form>
-        <img onClick={handleRandomise} className="button randomise" src={image}></img>
+        <div className="feeling-lucky">
+          <p>My Fridge Is Full! Feeling Lucky...</p>
+          <img onClick={handleRandomise} className="randomise" src={image}></img>
+        </div>
       </section>
     </>
   )
