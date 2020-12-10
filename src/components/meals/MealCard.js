@@ -1,20 +1,25 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
+function MealCard({ strMeal, strMealThumb, idMeal }) {
 
 
-function MealCard({ strMeal, strMealThumb }) {
   return (
-    <div className="pic column is-one-third-desktop is-one-third-tablet">
-      <div className="card">
-        <div className="card-header">
-          <div className="card-header-title">{strMeal}</div>
+    <div className="column is-one-third-desktop is-half-tablet" >
+      <Link to={`/meals/${idMeal}`}>
+        <div className="card size">
+          <div className="card-image">
+            <figure className="image image-is-1by1">
+              <img src={strMealThumb} alt={strMeal} />
+            </figure>
+          </div>
+          <div className="card-header">
+            <div className="card-header-title">{strMeal}</div>
+          </div>
         </div>
-        <div className="card-image">
-          <figure className="image image-is-1by1">
-            <img src={strMealThumb} alt={strMeal} />
-          </figure>
-        </div>
-      </div>
+      </Link>
     </div>
+   
   )
 }
 export default MealCard

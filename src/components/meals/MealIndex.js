@@ -22,6 +22,7 @@ function MealIndex( ) {
     } 
     getData()
   }, [])
+  console.log(meals)
   return (
     <section className="section">
       <div className="container">

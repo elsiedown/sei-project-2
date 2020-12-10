@@ -3,8 +3,9 @@
 html, body {
   height: 100%;
 }
-
-
+body {
+  margin: 0;
+}
 .homepage {
   display: flex;
   flex-direction: column;
@@ -16,16 +17,27 @@ html, body {
   background-repeat: none;
   background-size: cover;
   margin: 0;
-  input {
-    background-color: transparent;
-    border: grey 1px solid;
-  }
 }
-
 h1 {
   font-size: 100px;
 }
+.image img {
+  width: 360px;
+  height: 340px;
+}
+.card-header-title {
+  height: 68px;
+}
+.size{
+  width: 360px;
+  height: 408px;
+}
 
-nav {
+.column:hover {
+cursor: pointer;
+border: 10px solid white;
+}
+
+.navbar.is-dark {
   background-color: black;
 }
