@@ -25,23 +25,25 @@ function Home() {
   return (
     <>
       <section className="homepage">
-        <h1>Whats in Your Fridge?</h1>
-        <form onSubmit={handleFormSubmit}>
-          <input autoFocus 
-            type="text"
-            placeholder="Search Your Ingredient"
-            onChange={handleFormChange}
-          />
-          <i className="fas fa-search"></i>
-          <br/>
-          <div className="buttons"> 
-            <button className="button"
-              value="random">Look for Meal</button>
-            <button onClick={handleRandomise} className="button randomise"
-              value="random">Im Feeling Lucky!</button>
-          </div>
-        </form>
-       
+        <div className="home-animation">
+          <h1>Whats in Your Fridge?</h1>
+          <form onSubmit={handleFormSubmit}>
+            <input autoFocus 
+              type="text"
+              placeholder="Search Your Ingredient"
+              onChange={handleFormChange}
+              value={search}
+            />
+            <i className="fas fa-search"></i>
+            <br/>
+            <div className="buttons"> 
+              <button className="button"
+                value="random">Look for Meal</button>
+              <button onClick={handleRandomise} className="button randomise"
+                value="random">Im Feeling Lucky!</button>
+            </div>
+          </form>
+        </div>
       </section>
     </>
   )

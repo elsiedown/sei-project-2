@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
 
 // Main 
-
 html, body {
   height: 100%;
 }
@@ -11,20 +10,15 @@ body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
 }
-
 h1 {
   font-size: 100px;
   margin-top: 300px;
   text-align: center;
 }
-
 p {
   font-family: 'Raleway', sans-serif;
 }
-
-
 // HomePage
-
 .homepage {
   font-family: 'Ranchers', cursive;
   color: black;
@@ -43,6 +37,13 @@ p {
   }
 }
 
+.home-animation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fade-in 1.5s ease, bounce 1.5s ease;
+}
+
 .buttons {
   display: flex;
   align-items: center;
@@ -50,8 +51,6 @@ p {
   width: 400px;
   margin-top: 25px;
 }
-
-
 .navbar {
   font-family: 'Ranchers', cursive;
   font-size: 24px;
@@ -59,8 +58,6 @@ p {
 .navbar.is-dark {
   background-color: black;
 }
-
-
 input {
   background-color: transparent;
   height: 36px;
@@ -73,29 +70,26 @@ input {
   color: black;
   font-weight: bold ;
 }
-
 ::placeholder {
   color: black;
   font-weight: 900;
 }
-
 input:focus {
   outline:none;
 }
-
 button {
   font-family: 'Ranchers', cursive;
   padding: 5px;
   outline: none;
 }
-
 button:focus {
   outline: none;
 }
-
-
 // MealIndex + MealCards
 
+.column-slide {
+  animation: meal-bounce 1s ease;
+}
 .image img {
   width: 360px;
   height: 340px;
@@ -112,13 +106,10 @@ button:focus {
   height: 380px;
   overflow-y: auto;
 }
-
 .card-column:hover {
 cursor: pointer;
 border: 10px solid white;
 }
-
-
 .meal-search {
   display: flex;
   flex-direction: column;
@@ -130,7 +121,6 @@ border: 10px solid white;
     }
   }
 }
-
 .yuck{
   border: 1px solid ;
   height: 68px;
@@ -138,37 +128,75 @@ border: 10px solid white;
   border-color: transparent;
   color: rgba(0, 0, 0, 0.7);
 }
-
 // MealShow
-
-
 .heading-meal {
   font-size: 30px;
   text-align: center;
 }
-
 .carousel-container {
   display: flex;
   flex-direction: row;
   overflow-x: auto;
 }
-
-
 .ingredientsSection{
   display: flex;
   flex-direction: column;
 }
-
-
 .ingredients {
   display: flex;
   overflow-x: auto;
   p{
     margin: 20px 10px 0 0;
-  
+  }
+}
+.ingred:hover {
+    font-size: 28px;
+}
+@keyframes slide-in {
+  0% {
+   top: -300px;
+ }
+ 100% {
+   top: 0;
+ }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
-.ingred:hover {
-    font-size: 28px;
+
+@keyframes bounce {
+  0% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  60% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+
+@keyframes meal-bounce {
+  0% {
+    opacity: 0;
+    transform: translateY(300px);
+  }
+  60% {
+    opacity: 0;
+    transform: translateY(300px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }

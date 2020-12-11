@@ -42,6 +42,7 @@ function MealIndex( ) {
   const handleFormSubmit = event => {
     event.preventDefault()
     history.push(`/meals?search=${search}`)
+    setSearch('')
   }
 
   const handleFormChange = event => {
@@ -50,12 +51,13 @@ function MealIndex( ) {
 
 
   return (
-    <section className="section">
+    <section className="section column-slide">
       <div className="container meal-search">
         <form onSubmit={handleFormSubmit}>
           <input autoFocus 
             type="text"
             placeholder="Search Your Ingredient"
+            value={search}
             onChange={handleFormChange}
           />
           <button className="button">Look for Meal</button>
