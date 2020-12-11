@@ -21,6 +21,7 @@ function Home() {
     event.preventDefault()
     history.push('/meals/random')
   }
+
   return (
     <>
       <section className="homepage">
@@ -41,5 +42,6 @@ function Home() {
       </section>
     </>
   )
+  
 }
 export default Home

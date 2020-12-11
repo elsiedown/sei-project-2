@@ -111,3 +111,22 @@ button:focus {
   overflow-x: auto;
 }
 
+.yuck{
+  border: 1px solid ;
+  height: 68px;
+  background-color: #d6d6d6;
+  border-color: transparent;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.ingredientsSection{
+  display: flex;
+  flex-direction: column;
+}
+.ingredients{
+  display: flex;
+  overflow-x: auto;
+  p{
+    margin: 20px 10px 0 0;
+  }
+}

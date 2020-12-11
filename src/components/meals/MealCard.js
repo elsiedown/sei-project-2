@@ -24,7 +24,7 @@ function MealCard({ strMeal, strMealThumb, idMeal }) {
         </Link>
         <div className="card-header">
           <div className="card-header-title">{strMeal}</div>
-          <button className="button" onClick={handleDelete}>YUCK!</button> 
+          <button className="button yuck" onClick={handleDelete}>YUCK!</button>  
         </div> 
       </div>}
     </div>
