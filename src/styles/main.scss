@@ -1,6 +1,9 @@
 @import '~bulma/bulma.sass';
 @import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
+@import 'homepage';
+@import 'mealindex';
+@import 'mealshow';
 
 // Main 
 html, body {
@@ -19,146 +22,8 @@ p {
   font-family: 'Raleway', sans-serif;
 }
 // HomePage
-.homepage {
-  font-family: 'Ranchers', cursive;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  // justify-content: center;
-  height: 100vh;
-  background-image: url('./images/fridge-background.jpg');
-  background-position: center;
-  background-repeat: none;
-  background-size: cover;
-  margin: 0;
-  .button {
-    margin: 5px 5px 0 0;
-  }
-}
 
-.home-animation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  animation: fade-in 1.5s ease, bounce 1.5s ease;
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 400px;
-  margin-top: 25px;
-}
-.navbar {
-  font-family: 'Ranchers', cursive;
-  font-size: 24px;
-}
-.navbar.is-dark {
-  background-color: black;
-}
-input {
-  background-color: transparent;
-  height: 36px;
-  text-align: center;
-  outline: none;
-  font-family: 'Raleway', sans-serif;
-  border: 2px solid grey;
-  border-radius: 15px;
-  width: 400px;
-  color: black;
-  font-weight: bold ;
-}
-::placeholder {
-  color: black;
-  font-weight: 900;
-}
-input:focus {
-  outline:none;
-}
-button {
-  font-family: 'Ranchers', cursive;
-  padding: 5px;
-  outline: none;
-}
-button:focus {
-  outline: none;
-}
-// MealIndex + MealCards
-
-.column-slide {
-  animation: meal-bounce 1s ease;
-}
-.image img {
-  width: 360px;
-  height: 340px;
-}
-.card-header-title {
-  height: 68px;
-  font-family: 'Raleway', sans-serif;
-}
-.size{
-  width: 360px;
-  height: 408px;
-}
-.showPage{
-  height: 380px;
-  overflow-y: auto;
-}
-.card-column:hover {
-cursor: pointer;
-border: 10px solid white;
-}
-.meal-search {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  form {
-    margin-bottom: 40px;
-    input {
-      margin-right: 5px;
-    }
-  }
-}
-.yuck{
-  border: 1px solid ;
-  height: 68px;
-  background-color: #d6d6d6;
-  border-color: transparent;
-  color: rgba(0, 0, 0, 0.7);
-}
-// MealShow
-
-.recipe-animation {
-  animation: fade-in 1.5s ease, bounce 1.3s ease;
-}
-
-.heading-meal {
-  font-size: 30px;
-  text-align: center;
-  animation: fade-in 1.5s ease, meal-bounce 1.3s ease;
-}
-.carousel-container {
-  display: flex;
-  flex-direction: row;
-  overflow-x: auto;
-  animation: fade-in 1.5s ease, meal-bounce 1.3s ease;
-}
-.ingredientsSection{
-  display: flex;
-  flex-direction: column;
-}
-.ingredients {
-  display: flex;
-  overflow-x: auto;
-  p{
-    margin: 20px 10px 0 0;
-  }
-}
-.ingred:hover {
-    font-size: 28px;
-}
+// Animations 
 @keyframes slide-in {
   0% {
    top: -300px;
@@ -180,11 +45,11 @@ border: 10px solid white;
 @keyframes bounce {
   0% {
     opacity: 0;
-    transform: translateX(300px);
+    transform: translateX(100px);
   }
   60% {
     opacity: 0;
-    transform: translateX(300px);
+    transform: translateX(100px);
   }
   100% {
       opacity: 1;

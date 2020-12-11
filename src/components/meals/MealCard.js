@@ -13,7 +13,7 @@ function MealCard({ strMeal, strMealThumb, idMeal }) {
 
   
   return (
-    <div className="card-column column is-one-third-desktop is-half-tablet" >
+    <div className="card-column column is-one-third-desktop is-half-tablet column-slide" >
       { !isdelete && <div className="card size">
         <Link to={`/meals/${idMeal}`}>
           <div className="card-image">

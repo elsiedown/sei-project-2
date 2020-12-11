@@ -51,7 +51,7 @@ function MealIndex( ) {
 
 
   return (
-    <section className="section column-slide">
+    <section className="section">
       <div className="container meal-search">
         <form onSubmit={handleFormSubmit}>
           <input autoFocus 

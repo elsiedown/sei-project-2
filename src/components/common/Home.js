@@ -40,7 +40,7 @@ function Home() {
               <button className="button"
                 value="random">Look for Meal</button>
               <button onClick={handleRandomise} className="button randomise"
-                value="random">Im Feeling Lucky!</button>
+                value="random">My Fridge is Full!</button>
             </div>
           </form>
         </div>

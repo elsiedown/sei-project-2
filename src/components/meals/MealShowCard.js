@@ -9,7 +9,7 @@ function MealShowCard( { meals, similarMeals }) {
       <div className="container">
         <div className="recipe-animation">
           {meals ?
-            <div>
+            <div className="recipe-animation">
               <h2 className="title has-text-centered">{meals.meals[0].strMeal}</h2>
               <hr />
               <div className="columns showPage">
