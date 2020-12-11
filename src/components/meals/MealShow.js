@@ -19,7 +19,6 @@ function MealShow() {
         setIngredients(Object.keys(data.meals[0]))
         setMeals(data)
         setCategories(similarCategories)
-        // console.log(Object.keys(meals.meals[0])
         console.log(ingredients)
       } catch (err) {
         console.log(err)

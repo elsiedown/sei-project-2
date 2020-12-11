@@ -1,5 +1,6 @@
 import React from 'react'
 import MealCard from './MealCard'
+import ErrorCard from './ErrorCard'
 import axios from 'axios'
 import { useLocation, useHistory } from 'react-router-dom'
 
@@ -10,8 +11,9 @@ function MealIndex( ) {
   const params = new URLSearchParams(location.search)
   const searchterm = params.get('search')
   const [data, setData] = React.useState('')
+  const [hasError, setHasError] = React.useState(false)
   const meals = data.meals
-  console.log(meals)
+  
 
   const [search, setSearch] = React.useState('')
   // let searchvalue = ''
@@ -24,6 +26,9 @@ function MealIndex( ) {
       try {
         const { data } = await axios.get(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchterm}`)
         setData(data)
+        if (!data.meals) {
+          setHasError(true)
+        }
       } catch (err) {
         console.log(err)
       }
@@ -43,8 +48,7 @@ function MealIndex( ) {
     setSearch(event.target.value)
   }
 
-  
-  console.log(meals)
+
   return (
     <section className="section">
       <div className="container meal-search">
@@ -62,7 +66,10 @@ function MealIndex( ) {
               <MealCard key={meal.idMeal} {...meal} />
             ))
             :
-            <p>...loading</p>
+            hasError ? <ErrorCard /> :
+              <h2 className="title has-text-centered">
+               ...loading 
+              </h2>
           }
         </div>
       </div>
