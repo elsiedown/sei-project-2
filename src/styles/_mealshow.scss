@@ -1,7 +1,11 @@
 // MealShow
 
+
 .recipe-animation {
   animation: fade-in 1.5s ease, bounce 1.3s ease;
+}
+div.column.is-half.recipe-animation{
+  animation: fade-in 1.5s ease, bounce 1.3s ease !important;
 }
 
 .heading-meal {

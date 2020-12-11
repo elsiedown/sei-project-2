@@ -29,9 +29,11 @@ function MealShow() {
 
   
   return (
-    <MealShowCard 
-      meals={meals}
-      similarMeals={similarMeals}/>
+    <div className="recipe-animation">
+      <MealShowCard 
+        meals={meals}
+        similarMeals={similarMeals}/>
+    </div>
   )
 }
 export default MealShow

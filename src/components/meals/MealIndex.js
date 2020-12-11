@@ -51,7 +51,7 @@ function MealIndex( ) {
 
 
   return (
-    <section className="section">
+    <section className="column-slide section">
       <div className="container meal-search">
         <form onSubmit={handleFormSubmit}>
           <input autoFocus 
@@ -62,7 +62,7 @@ function MealIndex( ) {
           />
           <button className="button">Look for Meal</button>
         </form>
-        <div className="columns is-multiline">
+        <div className="olumn-slide columns is-multiline">
           {meals ?
             meals.map(meal => (
               <MealCard key={meal.idMeal} {...meal} />

@@ -2,18 +2,18 @@ import React from 'react'
 import MealCategoryCard from './MealCategoryCard'
 import MealIngredients from './MealIngredients'
 
-function MealShowCard( { meals, similarMeals }) {
 
+function MealShowCard( { meals, similarMeals }) {
   return (
     <section className="section">
       <div className="container">
         <div className="recipe-animation">
           {meals ?
-            <div className="recipe-animation">
+            <div>
               <h2 className="title has-text-centered">{meals.meals[0].strMeal}</h2>
               <hr />
               <div className="columns showPage">
-                <div className="column is-half">
+                <div className="column is-half recipe-animation">
                   <figure className="image">
                     <img src={meals.meals[0].strMealThumb} alt={meals.meals[0].strMeal} />
                   </figure>
@@ -24,7 +24,7 @@ function MealShowCard( { meals, similarMeals }) {
                   <p>{meals.meals[0].strInstructions}</p>
                 </div>
               </div>
-              <MealIngredients {... meals}/>
+              <MealIngredients key={meals.meals[0].idMeal } {... meals}/>
             </div>
             :
             <p>...loading</p>
@@ -47,5 +47,4 @@ function MealShowCard( { meals, similarMeals }) {
     </section>
   )
 }
-
 export default MealShowCard
