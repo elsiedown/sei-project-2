@@ -2,12 +2,13 @@ import React from 'react'
 
 function ErrorCard() {
   return (
-    <div>
-      <h1>Sorry No Recipes Found!</h1>
-      <p>Try Again!</p>
-    </div>
+    <>
+      <div className="errorMsg">
+        <h1 className="is-title-6 has-text-centered">No Meals Found!</h1>
+        <div className="gif">
+        </div>
+      </div>
+    </>
   )
-
 }
-
 export default ErrorCard
