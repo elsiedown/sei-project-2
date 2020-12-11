@@ -55,7 +55,7 @@ function MealIndex( ) {
         <form onSubmit={handleFormSubmit}>
           <input autoFocus 
             type="text"
-            placeholder="Search"
+            placeholder="Search Your Ingredient"
             onChange={handleFormChange}
           />
           <button className="button">Look for Meal</button>

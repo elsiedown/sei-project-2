@@ -1,6 +1,6 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
-import image from '../../styles/images/image-logo.png'
+
 
 
 
@@ -32,13 +32,16 @@ function Home() {
             placeholder="Search Your Ingredient"
             onChange={handleFormChange}
           />
-          <button className="button"
-            value="random">Look for Meal</button>
+          <i className="fas fa-search"></i>
+          <br/>
+          <div className="buttons"> 
+            <button className="button"
+              value="random">Look for Meal</button>
+            <button onClick={handleRandomise} className="button randomise"
+              value="random">Im Feeling Lucky!</button>
+          </div>
         </form>
-        <div className="feeling-lucky">
-          <p>My Fridge Is Full! Feeling Lucky...</p>
-          <img onClick={handleRandomise} className="randomise" src={image}></img>
-        </div>
+       
       </section>
     </>
   )

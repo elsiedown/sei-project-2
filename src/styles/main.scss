@@ -1,61 +1,56 @@
 @import '~bulma/bulma.sass';
 @import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
+
+// Main 
 
 html, body {
   height: 100%;
 }
 body {
   margin: 0;
+  font-family: 'Raleway', sans-serif;
 }
+
+h1 {
+  font-size: 100px;
+  margin-top: 300px;
+  text-align: center;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+}
+
+
+// HomePage
+
 .homepage {
   font-family: 'Ranchers', cursive;
   color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
   height: 100vh;
   background-image: url('./images/fridge-background.jpg');
   background-position: center;
   background-repeat: none;
   background-size: cover;
   margin: 0;
-  .randomise {
-    height: 50px;
+  .button {
+    margin: 5px 5px 0 0;
   }
 }
 
-.feeling-lucky {
-font-size: 28px;
-margin-top: 70px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-h1 {
-  font-size: 100px;
-}
-.image img {
-  width: 360px;
-  height: 340px;
-}
-.card-header-title {
-  height: 68px;
-}
-.size{
-  width: 360px;
-  height: 408px;
-}
-.showPage{
-  height: 380px;
-  overflow-y: auto;
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  margin-top: 25px;
 }
 
-.card-column:hover {
-cursor: pointer;
-border: 10px solid white;
-}
 
 .navbar {
   font-family: 'Ranchers', cursive;
@@ -65,25 +60,23 @@ border: 10px solid white;
   background-color: black;
 }
 
-.meal-search {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  form {
-    margin-bottom: 40px;
-    input {
-      margin-right: 5px;
-    }
-  }
-}
 
 input {
   background-color: transparent;
   height: 36px;
-  width: 260px;
-  border: 1px grey solid;
   text-align: center;
   outline: none;
+  font-family: 'Raleway', sans-serif;
+  border: 2px solid grey;
+  border-radius: 15px;
+  width: 400px;
+  color: black;
+  font-weight: bold ;
+}
+
+::placeholder {
+  color: black;
+  font-weight: 900;
 }
 
 input:focus {
@@ -100,6 +93,55 @@ button:focus {
   outline: none;
 }
 
+
+// MealIndex + MealCards
+
+.image img {
+  width: 360px;
+  height: 340px;
+}
+.card-header-title {
+  height: 68px;
+  font-family: 'Raleway', sans-serif;
+}
+.size{
+  width: 360px;
+  height: 408px;
+}
+.showPage{
+  height: 380px;
+  overflow-y: auto;
+}
+
+.card-column:hover {
+cursor: pointer;
+border: 10px solid white;
+}
+
+
+.meal-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  form {
+    margin-bottom: 40px;
+    input {
+      margin-right: 5px;
+    }
+  }
+}
+
+.yuck{
+  border: 1px solid ;
+  height: 68px;
+  background-color: #d6d6d6;
+  border-color: transparent;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+// MealShow
+
+
 .heading-meal {
   font-size: 30px;
   text-align: center;
@@ -111,22 +153,22 @@ button:focus {
   overflow-x: auto;
 }
 
-.yuck{
-  border: 1px solid ;
-  height: 68px;
-  background-color: #d6d6d6;
-  border-color: transparent;
-  color: rgba(0, 0, 0, 0.7);
-}
 
 .ingredientsSection{
   display: flex;
   flex-direction: column;
 }
-.ingredients{
+
+
+.ingredients {
   display: flex;
   overflow-x: auto;
   p{
     margin: 20px 10px 0 0;
+  
   }
+}
+
+.ingred:hover {
+    font-size: 28px;
 }

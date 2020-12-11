@@ -18,7 +18,7 @@ function MealIngredients({ meals }) {
       </div>
       <div className="ingredients">
         {ingredients().map(ing => {
-          return <p key={ing[ing]} className="card-content">{ing}</p>
+          return <p key={ing[ing]} className="card-content ingred">{ing}</p>
         })}
       </div>
     </div>
