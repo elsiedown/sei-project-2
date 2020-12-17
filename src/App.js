@@ -10,9 +10,6 @@ import MealShow from './components/meals/MealShow'
 import MealRandomShow from './components/meals/MealRandomShow'
 
 
-
-
-
 function App() {
   // console.log(process.env.REACT_APP_MY_API_KEY)
   return (
