@@ -1,4 +1,4 @@
-# Project 2 - Whats in Your Fridge?
+# Project 2 - What's in Your Fridge?
 
 ## GA SEI Project 2: React App
 
@@ -21,18 +21,18 @@ This Readme will outline the approach I took and the wins and challenges that I 
 
 The App should:
 
-* **Consume a public API** – this could be anything but it must make sense for your project.
-* **Have several components** - At least one classical and one functional.
-* **The app should include a router** - with several “pages”.
-* **Include wireframes** - that you designed before building the app.
-* **Be deployed online** and accessible to the public.
+* **Consume a public API** – this could be anything but it must make sense for your project
+* **Have several components** - At least one classical and one functional
+* **The app should include a router** - with several “pages”
+* **Include wireframes** - that you designed before building the app
+* **Be deployed online** and accessible to the public
 
 
 ## Timeframe and Technologies Used
 
 **Timeframe**: 48 hours
 
-**Front End:**
+**Front-End:**
 
 * JavaScript ES6
 * React.js
@@ -40,7 +40,7 @@ The App should:
 * SASS
 * Bulma
 * Npm 
-* Axios / React-router-dom
+* Axios (for RESTful routes)
 
 **Dev Tools:**
 
@@ -68,7 +68,7 @@ The App should:
 * Happy with how we were going to access the information from the API, we moved onto setting up the different pages and the RESTful routes.
 * We then styled up our App, using Bulma and our own styling. 
 
-## Screen Shots
+## Site Visuals
 **Landing Page**
 ![](readme-screenshots/screenshot-one.png)
 **Filter by Ingredient**
@@ -78,14 +78,15 @@ The App should:
 
 ## Challenges
 
-* A main challenge was finding a suitable API to use. We soon discovered that lots of API’s required a payment plan to access full features and that others had complex and difficult documentation to understand. We decided that choosing an API which was simple to understand was the best option, even if that meant the quality of the recipes was not as high as intended.
-* The timeframe was also a challenge and we had to make sure we were not too ambitious with our planning. 
+* A main challenge was finding a suitable API to use. We soon discovered that lots of APIss required a payment plan to access full features and that others had complex and difficult documentation to understand. We decided that choosing an API which was simple to understand was the best option, even if that meant the quality of the recipes was not as high as we hoped.
+
+* The timeframe was also a challenge and we had to make sure we were not too ambitious with our planning and that we met the deadline.
 
 ## Wins
 * The project was invaluable in terms of pair programming and being able to share and learn with my partner. It was great to swap skills and learn from each-other. 
 * I think we managed to achieve a lot in the small timeframe that we had and I was happy with both the functionality and styling.
 
-## What I learned
+## What I Learned
 * How to use a public API
 * How to build a React App, using RESTful routes
 * Pair programming - benefits of sharing skills and learning from one another
