@@ -4,7 +4,7 @@
 
 You can find a hosted version of our App here : [What’s In Your Fridge?](https://whatsinyafridge.netlify.app/)
 
-**Collaborator**
+**Collaborator:**
 
 Tobi Lesi - [Github](https://github.com/olulesi)
 
