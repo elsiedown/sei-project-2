@@ -4,7 +4,7 @@
 
 You can find a hosted version of our App here : [What’s In Your Fridge?](https://whatsinyafridge.netlify.app/)
 
-*Collaborator*
+**Collaborator**
 
 Tobi Lesi - [Github](https://github.com/olulesi)
 
@@ -21,18 +21,18 @@ This Readme will outline the approach I took and the wins and challenges that I 
 
 The App should:
 
-* *Consume a public API* – this could be anything but it must make sense for your project.
-* *Have several components* - At least one classical and one functional.
-* *The app should include a router* - with several “pages”.
-* *Include wireframes* - that you designed before building the app.
-* *Be deployed online* and accessible to the public.
+* **Consume a public API** – this could be anything but it must make sense for your project.
+* **Have several components** - At least one classical and one functional.
+* **The app should include a router** - with several “pages”.
+* **Include wireframes** - that you designed before building the app.
+* **Be deployed online** and accessible to the public.
 
 
 ## Timeframe and Technologies Used
 
-*Timeframe*: 48 hours
+**Timeframe**: 48 hours
 
-*Front End:*
+**Front End:**
 
 * JavaScript ES6
 * React.js
@@ -42,7 +42,7 @@ The App should:
 * Npm 
 * Axios / React-router-dom
 
-*Dev Tools:*
+**Dev Tools:**
 
 * Insomnia
 * VSCode
@@ -69,9 +69,11 @@ The App should:
 * We then styled up our App, using Bulma and our own styling. 
 
 ## Screen Shots
-
+**Landing Page**
 ![](readme-screenshots/screenshot-one.png)
+**Filter by Ingredient**
 ![](readme-screenshots/screenshot-two.png)
+**Recipe Page**
 ![](readme-screenshots/screenshot-three.png)
 
 ## Challenges
