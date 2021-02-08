@@ -1,67 +1,95 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) GA London React Template
+# Project 2 - Whats in Your Fridge?
 
-`yarn start` to run the development server
+## GA SEI Project 2: React App
 
-`yarn build` to create a build directory
+You can find a hosted version of our App here : [What’s In Your Fridge?](https://whatsinyafridge.netlify.app/)
+
+*Collaborator*
+
+Tobi Lesi - [Github](https://github.com/olulesi)
 
 ## Overview
-​
-The second project is to **build a React application** that consumes a **public API**.
-​
-### Technical Requirements
-​
-Your app must:
-​
-* **Consume a public API** – this could be anything but it must make sense for your project.
-* **Have several components** - At least one classical and one functional.
-* **The app can have a router** - with several "pages", this is up to your disgression and if it makes sense for your project.
-* **Include wireframes** - that you designed before building the app.
-* **Be deployed online** and accessible to the public.
-​
----
-​
-## Necessary Deliverables
-​
-* A **working application**, hosted somewhere on the internet
-* A **link to your hosted working app** in the URL section of your Github repo
-* A **git repository hosted on Github**, with a link to your hosted project, and frequent commits dating back to the _very beginning_ of the project
-* **A `readme.md` file** with:
-  * Explanations of the **technologies** used
-    * A couple of paragraphs about the **general approach you took**
-    * **Installation instructions** for any dependencies
-    * Link to your **wireframes** – sketches of major views / interfaces in your application
-   * Descriptions of any **unsolved problems** or **major hurdles** your team had to overcome
-​
----
-​
-## Suggested Ways to Get Started
-​
-* **Don’t hesitate to write throwaway code** to solve short term problems.
-* **Read the docs for whatever technologies / frameworks / APIs you use**.
-* **Write DRY code**.
-* **Be consistent with your code style.**
-* **Commit early, commit often.** Don’t be afraid to break something because you can always go back in time to a previous version.
-* **Keep user stories small and well-defined**, and remember – user stories focus on what a user needs, not what development tasks need accomplishing.
-* **Write code another developer wouldn't have to ask you about**. Do your naming conventions make sense? Would another developer be able to look at your app and understand what everything is?
-* **Make it all well-formatted.** Are you indenting, consistently? Can we find the start and end of every div, curly brace, etc?
-* **Comment your code.** Will someone understand what is going on in each block or function? Even if it's obvious, explaining the what & why means someone else can pick it up and get it.
-* **Write pseudocode before you write actual code.** Thinking through the logic of something helps.
-​
----
-​
-## Sign Off Reqs
-​
-* A working request in Insomnia from the API you want to use, showing that you can access the dataset you need.
-* A basic wireframe of your apps design + components
-​
-## Useful Resources
-​
-* **[React](https://reactjs.org/)**
-* **[Some free APIs](https://apilist.fun/)**
-* **[Some more free APIs](https://github.com/public-apis/public-apis)**
-* **[Even more free APIs](https://dev.to/camerenisonfire/10-intriguing-public-rest-apis-for-your-next-project-2gbd)**
-* **[The best free API Finder](https://www.google.com)*
+
+This was my second project on the General Assembly Software Engineering Immersive course.  As a pair, we were given 48 hours to build a React.js application of our choice, which consumed a public API and used RESTful routes.
+
+The idea of our App is to help users find recipes based on the food that they have in their fridge. Users can search the main ingredient that they have (eg. ‘chicken’, ‘pork’ etc.) and are given a set of recipes to choose from which contain that ingredient. 
+
+This Readme will outline the approach I took and the wins and challenges that I encountered along the way.
 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Brief
 
+The App should:
+
+* *Consume a public API* – this could be anything but it must make sense for your project.
+* *Have several components* - At least one classical and one functional.
+* *The app should include a router* - with several “pages”.
+* *Include wireframes* - that you designed before building the app.
+* *Be deployed online* and accessible to the public.
+
+
+## Timeframe and Technologies Used
+
+*Timeframe*: 48 hours
+
+*Front End:*
+
+* JavaScript ES6
+* React.js
+* HTML5 & CSS3 with Animation
+* SASS
+* Bulma
+* Npm 
+* Axios / React-router-dom
+
+*Dev Tools:*
+
+* Insomnia
+* VSCode
+* Eslint
+* Git
+* GitHub & Github Pages
+* Google Chrome Dev Tools
+* Google Fonts
+
+## Features
+
+* Homepage
+* Index of all recipes
+* Search or filter by main ingredient available
+* Detail page for each recipe with link to similar recipes (which include that same ingredient or are in the same category)
+* ‘Yuck’ feature - to remove unappealing recipes
+* ‘My fridge is full’ button which is similar to the ‘I’m Feeling Lucky’ feature and takes you to a random recipe 
+* ‘No meals found’ page
+
+## Approach Taken
+
+* We started by brainstorming ideas - realising that we both had an interest for food and cooking we decided to build a recipe searching App. After researching food-based APIs, we decided to use MealDb which seemed to have relatively straightforward documentation and multiple recipes available (which could be searched by ingredient or category). Given that some of the recipes available were slightly unappetising, we decided to take a slightly comical approach - (hence the homepage photo) and the ‘yuck’ button available on each recipe card to remove that recipe from the search results. 
+* Happy with how we were going to access the information from the API, we moved onto setting up the different pages and the RESTful routes.
+* We then styled up our App, using Bulma and our own styling. 
+
+## Screen Shots
+
+![](readme-screenshots/screenshot-one.png)
+![](readme-screenshots/screenshot-two.png)
+![](readme-screenshots/screenshot-three.png)
+
+## Challenges
+
+* A main challenge was finding a suitable API to use. We soon discovered that lots of API’s required a payment plan to access full features and that others had complex and difficult documentation to understand. We decided that choosing an API which was simple to understand was the best option, even if that meant the quality of the recipes was not as high as intended.
+* The timeframe was also a challenge and we had to make sure we were not too ambitious with our planning. 
+
+## Wins
+* The project was invaluable in terms of pair programming and being able to share and learn with my partner. It was great to swap skills and learn from each-other. 
+* I think we managed to achieve a lot in the small timeframe and I was happy with both the functionality and styling.
+
+## What I learned
+* How to use a public API
+* How to build a React App, using RESTful routes
+* Pair programming - benefits of sharing skills and learning from one another
+* Time management in order to reach MVP within the short timeframe
+* Restful routes
+
+## Future Features
+
+* If I had more time I would like to improve the ‘Yuck’ functionality - instead of making the display ‘none’ I would remove the item from the array and this would therefore fix the bug where the styling goes a bit off when you click the yuck button but we ran out of time to achieve this.
