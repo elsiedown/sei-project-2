@@ -4,7 +4,7 @@
 
 You can find a hosted version of our App here : [What’s In Your Fridge?](https://whatsinyafridge.netlify.app/)
 
-**Collaborator:**
+## Collaborator:
 
 Tobi Lesi - [Github](https://github.com/olulesi)
 
@@ -58,9 +58,9 @@ The App should:
 * Index of all recipes
 * Search or filter by main ingredient available
 * Detail page for each recipe with link to similar recipes (which include that same ingredient or are in the same category)
-* ‘Yuck’ feature - to remove unappealing recipes
-* ‘My fridge is full’ button which is similar to the ‘I’m Feeling Lucky’ feature and takes you to a random recipe 
-* ‘No meals found’ page
+* 'Yuck' feature - to remove unappetising recipes
+* 'My fridge is full' button which is similar to the ‘I’m Feeling Lucky’ feature and takes you to a random recipe 
+* 'No meals found' page
 
 ## Approach Taken
 
@@ -83,14 +83,14 @@ The App should:
 
 ## Wins
 * The project was invaluable in terms of pair programming and being able to share and learn with my partner. It was great to swap skills and learn from each-other. 
-* I think we managed to achieve a lot in the small timeframe and I was happy with both the functionality and styling.
+* I think we managed to achieve a lot in the small timeframe that we had and I was happy with both the functionality and styling.
 
 ## What I learned
 * How to use a public API
 * How to build a React App, using RESTful routes
 * Pair programming - benefits of sharing skills and learning from one another
 * Time management in order to reach MVP within the short timeframe
-* Restful routes
+
 
 ## Future Features
 
