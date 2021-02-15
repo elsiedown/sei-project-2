@@ -125,7 +125,6 @@ function MealShow() {
         setIngredients(Object.keys(data.meals[0]))
         setMeals(data)
         setCategories(similarCategories)
-        console.log(ingredients)
       } catch (err) {
         console.log(err)
       }
@@ -194,7 +193,7 @@ export default MealRandomShow
 * We then styled up our App, using Bulma and our own styling. 
 
 ## Site Visuals
-![](readme-screenshots/whats-in-your-fridge.mov)
+![screen-gif](readme-screenshots/whatsin-your-fridge.gif)
 **Landing Page**
 ![](readme-screenshots/screenshot-one.png)
 **Filter by Ingredient**
