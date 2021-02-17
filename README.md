@@ -1,6 +1,6 @@
 # Project 2 - What's in Your Fridge?
 
-## GA SEI Project 2: React App
+## General Assembly SEI Project 2: React App
 
 You can find a hosted version of our App here : [What’s In Your Fridge?](https://whatsinyafridge.netlify.app/)
 
@@ -190,10 +190,11 @@ export default MealRandomShow
 
 
 
-* We then styled up our App, using Bulma and our own styling. 
+* We then styled up our app, using Bulma and our own styling. 
 
 ## Site Visuals
 ![screen-gif](readme-screenshots/whatsin-your-fridge.gif)
+
 **Landing Page**
 ![](readme-screenshots/screenshot-one.png)
 **Filter by Ingredient**
