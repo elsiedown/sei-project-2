@@ -213,10 +213,10 @@ export default MealRandomShow
 * I think we managed to achieve a lot in the small timeframe that we had and I was happy with both the functionality and styling.
 
 ## What I Learned
-* How to use a public API - as mentioned this took time to figure out which API was most suitable for our project, based on the documentation provided and the data we coudl access for free
-* How to build a React App, using RESTful routes
-* Pair programming - this was the first project I had pair-coded and I learned the benefits of sharing skills and learning from one another
-* Time management in order to reach MVP within the short timeframe - invaluable in terms of learning how to plan efficiently and achieve results within a short timeframe
+* How to use a public API - as mentioned this took time to figure out which API was most suitable for our project, based on the documentation provided and the data we coudl access for free.
+* How to build a React App, using RESTful routes.
+* Pair programming - this was the first project I had pair-coded and I learned the benefits of sharing skills and learning from one another.
+* Time management in order to reach MVP within the short timeframe - invaluable in terms of learning how to plan efficiently and achieve results within a short timeframe.
 
 
 ## Future Features
