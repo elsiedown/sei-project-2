@@ -21,11 +21,11 @@ This Readme will outline the approach I took and the wins and challenges that I 
 
 The App should:
 
-* **Consume a public API** – this could be anything but it must make sense for your project
-* **Have several components** - At least one classical and one functional
-* **The app should include a router** - with several “pages”
-* **Include wireframes** - that you designed before building the app
-* **Be deployed online** and accessible to the public
+* **Consume a public API** – this could be anything but it must make sense for your project.
+* **Have several components** - At least one classical and one functional.
+* **The app should include a router** - with several “pages”.
+* **Include wireframes** - that you designed before building the app.
+* **Be deployed online** and accessible to the public.
 
 
 ## Timeframe and Technologies Used
